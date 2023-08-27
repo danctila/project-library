@@ -10,7 +10,14 @@ const ProjectsMsg = () => {
     >
       <Container centerContent maxW="100%">
         <Text
-          fontSize="5xl"
+          fontSize={{
+            base: "6xl",
+            sm: "5xl",
+            md: "5xl",
+            lg: "5xl",
+            xl: "5xl",
+            "2xl": "5xl",
+          }}
           textColor="white"
           fontWeight="bold"
           letterSpacing="5px"

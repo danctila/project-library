@@ -21,16 +21,32 @@ const WelcomeMsg = () => {
       >
         <VStack spacing="30px">
           <Text
-            fontSize="5xl"
+            fontSize={{
+              base: "6xl",
+              sm: "6xl",
+              md: "6xl",
+              lg: "5xl",
+              xl: "5xl",
+              "2xl": "5xl",
+            }}
             textColor="black"
+            textAlign="center"
             fontWeight="bold"
             letterSpacing="3px"
-            marginTop={"200px"}
+            marginTop="200px"
           >
             HEY, I'M DYLAN ANCTIL
           </Text>
           <Text
-            fontSize="2xl"
+            fontSize={{
+              base: "3xl",
+              sm: "3xl",
+              md: "3xl",
+              lg: "2xl",
+              xl: "2xl",
+              "2xl": "2xl",
+            }}
+            mx="8%"
             textColor="black"
             fontWeight={300}
             align="center"
@@ -45,6 +61,7 @@ const WelcomeMsg = () => {
             color="white"
             width="240px"
             height="50px"
+            borderColor="white"
             borderRadius="7px"
             fontStyle="normal"
             fontFamily=""

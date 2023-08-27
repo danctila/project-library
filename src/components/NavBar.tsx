@@ -29,14 +29,32 @@ const NavBar = () => {
         />
         <Text
           fontWeight={700}
-          fontSize="20px"
+          fontSize={{
+            base: "25px",
+            sm: "25px",
+            md: "20px",
+            lg: "20px",
+            xl: "20px",
+            "2xl": "20px",
+          }}
           letterSpacing="2px"
           color="black"
         >
           DYLAN ANCTIL
         </Text>
       </HStack>
-      <HStack spacing="50px" mr="70px">
+      <HStack
+        spacing="50px"
+        mr="70px"
+        fontSize={{
+          base: "25px",
+          sm: "25px",
+          md: "20px",
+          lg: "20px",
+          xl: "20px",
+          "2xl": "20px",
+        }}
+      >
         <Link fontWeight="semibold" onClick={() => scrollTop()}>
           HOME
         </Link>

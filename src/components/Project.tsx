@@ -28,6 +28,7 @@ const Project = ({ video, title, description, tools }: Props) => {
           </AspectRatio>
           <Text
             mb="15px"
+            mt="15px"
             fontSize="48px"
             fontWeight={600}
             letterSpacing="2.5px"
@@ -35,7 +36,17 @@ const Project = ({ video, title, description, tools }: Props) => {
           >
             {title}
           </Text>
-          <Text fontSize="2xl" mb="15px">
+          <Text
+            fontSize={{
+              base: "3xl",
+              sm: "3xl",
+              md: "2xl",
+              lg: "2xl",
+              xl: "2xl",
+              "2xl": "2xl",
+            }}
+            mb="15px"
+          >
             {description}
           </Text>
 
