@@ -1,7 +1,8 @@
 import { SimpleGrid } from "@chakra-ui/react";
 import Project from "./Project";
 import NYUProjectVideo from "../assets/Videos/NYU PROMO.mp4";
-import GameHubProjectVide from "../assets/Videos/Game Hub Video.mp4";
+import GameHubProjectVideo from "../assets/Videos/Game Hub Video.mp4";
+import BlackJackVideo from "../assets/Videos/BlackJack Promo.mp4";
 
 const ProjectGrid = () => {
   return (
@@ -21,7 +22,7 @@ const ProjectGrid = () => {
         tools={["REACT", "TYPESCRIPT", "CSS", "CHAKRA UI"]}
       ></Project>
       <Project
-        video={GameHubProjectVide}
+        video={GameHubProjectVideo}
         title="Game Hub"
         description="This project utilizes an API to fetch data about real games and display them in a simple single page application.
         The application is fully mobile responsive and includes searching, categorization, and dark mode features. 
@@ -29,6 +30,18 @@ const ProjectGrid = () => {
         To account for data fetching times, the application is complete with loading skeletons to mimic game cards that aren't loaded. 
         Game cards include data about each game such as title, platforms, and rating...all fetched from the API client."
         tools={["REACT", "API", "TYPESCRIPT", "CSS", "CHAKRA UI"]}
+      ></Project>
+      <Project
+        video={BlackJackVideo}
+        title="BlackJack"
+        description="Using only Java, this project recreates a standard 6 deck game of BlackJack. Starting the player off with 2 cards,
+        the player has the option to take a card or not after viewing their current hand as compared to the dealers current hand. Behind the 
+        scenes,
+        the deck of cards created is realistic with 52 cards and 4 suits. This is done through the creation of a Card object being replicated for
+        different values and suits in the Deck class. The game starts by rendering 6 decks of cards into the 'table' and will throw 
+        an 'out of bounds' error if cards run out. This game allows for simple fun through the use of Java ArrayList and class hierarchy logic 
+        combined with reading user input."
+        tools={["Java", "BlueJ"]}
       ></Project>
     </SimpleGrid>
   );
