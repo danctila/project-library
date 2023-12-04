@@ -1,5 +1,6 @@
 import { SimpleGrid } from "@chakra-ui/react";
 import Project from "./Project";
+import GradeCalcVideo from "../assets/Videos/GradeCalcPromo.mp4";
 import NYUProjectVideo from "../assets/Videos/NYU PROMO.mp4";
 import GameHubProjectVideo from "../assets/Videos/Game Hub Video.mp4";
 import BlackJackVideo from "../assets/Videos/BlackJack Promo.mp4";
@@ -12,6 +13,14 @@ const ProjectGrid = () => {
       padding="30px"
       background={"#DCDCDC"}
     >
+      <Project
+        video={GradeCalcVideo}
+        title="Grade Calculator"
+        description="This project is a mobile responsive web app developed for students to use at a high school. It holds a form component in which 
+        students can enter grades and a calculated average will return. The form component returns seperate arrays of the three form fields and performs 
+        calculations with the arrays after being sorted by user entered category. The web page uses React Routing to quickly switch between two pages."
+        tools={["REACT", "TYPESCRIPT", "CHAKRA UI", "REACT-ROUTER"]}
+      ></Project>
       <Project
         video={NYUProjectVideo}
         title="NYU Website Remake"
