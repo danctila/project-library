@@ -21,6 +21,7 @@ const ProjectGrid = () => {
         calculations with the arrays after being sorted by user entered category. The web page uses React Routing to quickly switch between two pages."
         tools={["REACT", "TYPESCRIPT", "CHAKRA UI", "REACT-ROUTER"]}
         gitHub="https://github.com/danctila/CalculatorFrontEnd"
+        liveLink="https://nhsgrader.com"
       ></Project>
       <Project
         video={NYUProjectVideo}
@@ -42,6 +43,7 @@ const ProjectGrid = () => {
         Game cards include data about each game such as title, platforms, and rating...all fetched from the API client."
         tools={["REACT", "API", "TYPESCRIPT", "CSS", "CHAKRA UI"]}
         gitHub="https://github.com/danctila/game-hub"
+        liveLink="https://game-hub-coral-mu.vercel.app/"
       ></Project>
       <Project
         video={BlackJackVideo}

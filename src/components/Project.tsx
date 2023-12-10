@@ -14,9 +14,17 @@ interface Props {
   description: string;
   tools: string[];
   gitHub?: string;
+  liveLink?: string;
 }
 
-const Project = ({ video, title, description, tools, gitHub }: Props) => {
+const Project = ({
+  video,
+  title,
+  description,
+  tools,
+  gitHub,
+  liveLink,
+}: Props) => {
   return (
     <>
       <Card variant="unstyled" width="900px" background={"#DCDCDC"}>
@@ -84,6 +92,20 @@ const Project = ({ video, title, description, tools, gitHub }: Props) => {
                 mt="8px"
               >
                 {gitHub}
+              </Link>
+            </HStack>
+          )}
+          {liveLink && (
+            <HStack>
+              <Text fontSize="4xl">Live:</Text>
+              <Link
+                color="blue"
+                fontSize="25px"
+                fontWeight="300"
+                href={liveLink}
+                mt="8px"
+              >
+                {liveLink}
               </Link>
             </HStack>
           )}
