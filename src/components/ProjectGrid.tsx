@@ -1,6 +1,6 @@
 import { SimpleGrid } from "@chakra-ui/react";
 import Project from "./Project";
-import GradeCalcVideo from "../assets/Videos/GradeCalcPromo.mp4";
+import GradeCalcVideo from "../assets/Videos/GradeCalcPromo2.mp4";
 import NYUProjectVideo from "../assets/Videos/NYU PROMO.mp4";
 import GameHubProjectVideo from "../assets/Videos/Game Hub Video.mp4";
 import BlackJackVideo from "../assets/Videos/BlackJack Promo.mp4";
