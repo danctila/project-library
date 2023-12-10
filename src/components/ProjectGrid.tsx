@@ -20,6 +20,7 @@ const ProjectGrid = () => {
         students can enter grades and a calculated average will return. The form component returns seperate arrays of the three form fields and performs 
         calculations with the arrays after being sorted by user entered category. The web page uses React Routing to quickly switch between two pages."
         tools={["REACT", "TYPESCRIPT", "CHAKRA UI", "REACT-ROUTER"]}
+        gitHub="https://github.com/danctila/CalculatorFrontEnd"
       ></Project>
       <Project
         video={NYUProjectVideo}
@@ -29,6 +30,7 @@ const ProjectGrid = () => {
         that was already created and just try to mimic it. From the color scheme to the hover effects the main page is almost pixel
         for pixel identical when comparing my version of the website to the official NYU website."
         tools={["REACT", "TYPESCRIPT", "CSS", "CHAKRA UI"]}
+        gitHub="https://github.com/danctila/nyu-website"
       ></Project>
       <Project
         video={GameHubProjectVideo}
@@ -39,6 +41,7 @@ const ProjectGrid = () => {
         To account for data fetching times, the application is complete with loading skeletons to mimic game cards that aren't loaded. 
         Game cards include data about each game such as title, platforms, and rating...all fetched from the API client."
         tools={["REACT", "API", "TYPESCRIPT", "CSS", "CHAKRA UI"]}
+        gitHub="https://github.com/danctila/game-hub"
       ></Project>
       <Project
         video={BlackJackVideo}

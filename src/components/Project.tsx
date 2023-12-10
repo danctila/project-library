@@ -4,6 +4,7 @@ import {
   Card,
   CardBody,
   HStack,
+  Link,
   Text,
 } from "@chakra-ui/react";
 
@@ -12,9 +13,10 @@ interface Props {
   title: string;
   description: string;
   tools: string[];
+  gitHub?: string;
 }
 
-const Project = ({ video, title, description, tools }: Props) => {
+const Project = ({ video, title, description, tools, gitHub }: Props) => {
   return (
     <>
       <Card variant="unstyled" width="900px" background={"#DCDCDC"}>
@@ -70,6 +72,21 @@ const Project = ({ video, title, description, tools }: Props) => {
               </Box>
             ))}
           </HStack>
+
+          {gitHub && (
+            <HStack>
+              <Text fontSize="4xl">GitHub:</Text>
+              <Link
+                color="blue"
+                fontSize="25px"
+                fontWeight="300"
+                href={gitHub}
+                mt="8px"
+              >
+                {gitHub}
+              </Link>
+            </HStack>
+          )}
         </CardBody>
       </Card>
     </>
