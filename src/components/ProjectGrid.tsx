@@ -1,5 +1,6 @@
 import { SimpleGrid } from "@chakra-ui/react";
 import Project from "./Project";
+import MySchoolPromoVideo from "../assets/Videos/MySchool Promo Video.mp4";
 import TTTPromoVideo from "../assets/Videos/Total Tech Tools Promo Video.mp4";
 import GradeCalcVideo from "../assets/Videos/GradeCalcPromo2.mp4";
 import FactSenderPromoVideo from "../assets/Videos/Fact Sender Promo.mp4";
@@ -15,6 +16,18 @@ const ProjectGrid = () => {
       padding="30px"
       background={"#DCDCDC"}
     >
+      <Project
+        video={MySchoolPromoVideo}
+        title="MySchool Parter Program"
+        description="This is a Full Stack React app paired with Express JS and MySQL for the 2023/2024 Connecticut Future Business Leaders of America Coding & Programming 
+                      competition. The topic for the competition was to create a program that allows your Career and Technical Education Department to collect and store 
+                      information about business and community partners. The program features a React frontend with Javascript.
+                      The backend server was developed using Express JS and includes 5 endpoints for data collection and manipulation from the MySQL database 
+                      hosted on a Raspberry Pi 4. The program enables users to search and filter information as needed as well as update, create, and delete 
+                      information with validated forms that sync to the MySQL database for usage of the dynamic backup file download feature."
+        tools={["REACT", "JAVASCRIPT", "EXPRESS", "SQL", "RASP PI"]}
+        gitHub="https://github.com/danctila/my-school"
+      ></Project>
       <Project
         video={TTTPromoVideo}
         title="Total Tech Tools Website"
