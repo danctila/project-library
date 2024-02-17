@@ -1,6 +1,7 @@
 import { SimpleGrid } from "@chakra-ui/react";
 import Project from "./Project";
 import GradeCalcVideo from "../assets/Videos/GradeCalcPromo2.mp4";
+import FactSenderPromoVideo from "../assets/Videos/Fact Sender Promo.mp4";
 import NYUProjectVideo from "../assets/Videos/NYU PROMO.mp4";
 import GameHubProjectVideo from "../assets/Videos/Game Hub Video.mp4";
 import BlackJackVideo from "../assets/Videos/BlackJack Promo.mp4";
@@ -20,8 +21,17 @@ const ProjectGrid = () => {
         students can enter grades and a calculated average will return. The form component returns seperate arrays of the three form fields and performs 
         calculations with the arrays after being sorted by user entered category. The web page uses React Routing to quickly switch between two pages."
         tools={["REACT", "TYPESCRIPT", "CHAKRA UI", "REACT-ROUTER"]}
-        gitHub="https://github.com/danctila/CalculatorFrontEnd"
+        gitHub="https://github.com/danctila/calculator-frontend"
         liveLink="https://nhsgrader.com"
+      ></Project>
+      <Project
+        video={FactSenderPromoVideo}
+        title="Random Fact Emailer"
+        description="Using a random fact API and Google SMTP email servers, this project sends automated messages to an inputted list of email addresses.
+        The three files are automatically run on a schedule using a Raspberry Pi 4 with Crontab enabled. This project takes a simple approach to
+        API usage in Python and program scheduling in Linux in a fun way."
+        tools={["RASPBERRY PI", "PYTHON", "API", "GOOGLE SMTP"]}
+        gitHub="https://github.com/danctila/python-email-sender"
       ></Project>
       <Project
         video={NYUProjectVideo}
