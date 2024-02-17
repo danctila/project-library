@@ -1,5 +1,6 @@
 import { SimpleGrid } from "@chakra-ui/react";
 import Project from "./Project";
+import TTTPromoVideo from "../assets/Videos/Total Tech Tools Promo Video.mp4";
 import GradeCalcVideo from "../assets/Videos/GradeCalcPromo2.mp4";
 import FactSenderPromoVideo from "../assets/Videos/Fact Sender Promo.mp4";
 import NYUProjectVideo from "../assets/Videos/NYU PROMO.mp4";
@@ -14,6 +15,17 @@ const ProjectGrid = () => {
       padding="30px"
       background={"#DCDCDC"}
     >
+      <Project
+        video={TTTPromoVideo}
+        title="Total Tech Tools Website"
+        description="This is a freelance web design agency website made in React. This site is fully mobile responsive and includes a variety of modern features including
+                      a parallax logo, an animated mobile modal window and a typewriter effect. The website has a straightforward design to attract users to interact with
+                      the featured projects. The validated form sends data from the user to the site owner using Email JS after data is checked.
+"
+        tools={["REACT", "TYPESCRIPT", "CHAKRA UI", "EMAIL JS"]}
+        gitHub="https://github.com/danctila/total-tech-tools"
+        liveLink="https://totaltechtools.com"
+      ></Project>
       <Project
         video={GradeCalcVideo}
         title="Grade Calculator"
