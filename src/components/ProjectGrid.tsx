@@ -1,5 +1,6 @@
 import { SimpleGrid } from "@chakra-ui/react";
 import Project from "./Project";
+import DuckExplorerPromoVideo from "../assets/Videos/Duck Explorer Promo Video.mp4";
 import MySchoolPromoVideo from "../assets/Videos/MySchool Promo Video.mp4";
 import TTTPromoVideo from "../assets/Videos/Total Tech Tools Promo Video.mp4";
 import GradeCalcVideo from "../assets/Videos/GradeCalcPromo2.mp4";
@@ -16,6 +17,18 @@ const ProjectGrid = () => {
       padding="30px"
       background={"#DCDCDC"}
     >
+      <Project
+        video={DuckExplorerPromoVideo}
+        title="Duck Explorer"
+        description="The Duck Explorer application uses React using TypeScript as a frontend and Express using Javascript as a backend to 
+                      fetch and analyze random duck images. Images are fetched and analyzed using the random-d API as well as
+                      Open AI's gpt-4-vision-preview. The backend sends an image URL on reload to the frontend and on request using the new duck button.
+                      When the analyze button is clicked, the current image URL is sent from the frontend to an API POST endpoint on the backend to be
+                      sent to the Open AI model with a custom prompt and token limit. The response from the gpt model is then returned back to the frontend
+                      for display in a text bubble."
+        tools={["OPEN AI", "REACT", "TS", "JS", "EXPRESS"]}
+        gitHub="https://github.com/danctila/duck-explorer"
+      ></Project>
       <Project
         video={MySchoolPromoVideo}
         title="MySchool Parter Program"
