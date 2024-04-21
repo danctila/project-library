@@ -31,7 +31,7 @@ const ProjectGrid = () => {
       ></Project>
       <Project
         video={MySchoolPromoVideo}
-        title="MySchool Parter Program"
+        title="MySchool Partner Program"
         description="This is a Full Stack React app paired with Express JS and MySQL for the 2023/2024 Connecticut Future Business Leaders of America Coding & Programming 
                       competition. The topic for the competition was to create a program that allows your Career and Technical Education Department to collect and store 
                       information about business and community partners. The program features a React frontend with Javascript.
