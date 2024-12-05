@@ -1,5 +1,6 @@
 import { SimpleGrid } from "@chakra-ui/react";
 import Project from "./Project";
+import RateMyPlatePromoVideo from "../assets/Videos/RateMyPlatePromo.mp4";
 import DuckExplorerPromoVideo from "../assets/Videos/Duck Explorer Promo Video.mp4";
 import MySchoolPromoVideo from "../assets/Videos/MySchool Promo Video.mp4";
 import TTTPromoVideo from "../assets/Videos/Total Tech Tools Promo Video.mp4";
@@ -17,6 +18,19 @@ const ProjectGrid = () => {
       padding="30px"
       background={"#DCDCDC"}
     >
+      <Project
+        video={RateMyPlatePromoVideo}
+        title="Rate My Plate"
+        description="The Rate My Plate application is a comprehensive dining guide for Northeastern University students. 
+                      Built with a React frontend and Firebase backend, it provides personalized restaurant recommendations based on user preferences, 
+                      including restaurants that accept Husky Dining Dollars and offer student discounts. Users can browse restaurant details, leave reviews, 
+                      and engage in real-time chats about their dining experiences. The app also integrates Google Maps for location-based searches, ensuring a 
+                      seamless experience on both desktop and mobile devices. Rate My Plate combines convenience, community, and exclusive student deals to make 
+                      dining enjoyable and affordable."
+        tools={["REACT", "JS", "TAILWIND CSS", "FIREBASE", "LEAFLET"]}
+        gitHub="https://github.com/danctila/rate-my-plate"
+        liveLink="https://ratemyplate.danctil.com"
+      ></Project>
       <Project
         video={DuckExplorerPromoVideo}
         title="Duck Explorer"
