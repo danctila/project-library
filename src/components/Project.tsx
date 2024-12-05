@@ -34,7 +34,7 @@ const Project = ({
             ratio={16 / 9}
             shadow="6px 8px 6px -1px rgba(0, 0, 0, 0.25)"
           >
-            <iframe src={video} />
+            <video src={video} controls />
           </AspectRatio>
           <Text
             mb="15px"
